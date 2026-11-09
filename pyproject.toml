@@ -1,0 +1,28 @@
+[project]
+name = "mini-project2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "clarkbe8", email = "clarkbe8@msu.edu" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "jupyterlab>=4.6.6",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pyqsp>=0.2.0",
+    "qiskit>=2.6.2",
+]
+
+[project.scripts]
+mini-project2 = "mini_project2:main"
+
+[tool.uv]
+package = false
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.4",
+]
